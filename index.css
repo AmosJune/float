@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: white;
   padding: 0;
@@ -22,7 +25,6 @@ nav > .logo > h3{
 nav >.thelink >ul >li{
   display: inline-block;
   padding: 10px;
-  color: ;
 }
 #section-header{
   background-image: url("./assets/img/BGV.jpg");
@@ -39,13 +41,23 @@ nav >.thelink >ul >li{
   font-size: 50px;
 }
 #section-header > .header > h3, p{
-  color: white;
+  color: black;
 }
 #sectboutme >.boutme{
   display: flex;
+  gap: 20px;
 }
-#sectboutme >.boutme >.leftside, .rightside{
-  width: 100%;
+.leftside, .rightside{
+   width: 50%; 
+
+}
+.rightside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.6;
+  gap: 36px;
+  font-size: 25px;
 }
 
 #sectboutme >.boutme{
@@ -55,11 +67,42 @@ nav >.thelink >ul >li{
 #sectboutme >.boutme >.rightside{
   padding-right: 30px;
 }
-#sectboutme >.boutme >.rightside > button{
-  background-color: cornflowerblue;
-  padding: 5px;
-  color: white;
-}
+
 img{
-  width: 50vh;
+  max-width: 100%; 
+}
+.header >*{
+  color: white!important;
+}
+.btn{
+  border: 0;
+  padding: 20px 35px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: cornflowerblue;
+  color: white;
+  /* animation: btnAnimation 1s ease-in infinite; */
+  transition: transform 200ms ease-in-out;
+}
+.btn:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.btn-container{
+  margin-left: auto;
+  margin-right: auto;
+}
+.headerp{
+  font-size: 18px;
+  font-weight: bold;
+}
+@keyframes btnAnimation {
+  0%{
+    background-color: tomato;
+    transform: translateX(-1000px);
+  }
+  100%{
+    background-color: indigo;
+    transform: translateX(1000px);
+  }
 }
