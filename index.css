@@ -1,0 +1,65 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
+}
+nav > .logo, .thelink{
+  margin: 15px;
+}
+nav > .logo > h3{
+  color: black;
+  font-size: 30px;
+}
+nav >.thelink >ul >li{
+  display: inline-block;
+  padding: 10px;
+  color: ;
+}
+#section-header{
+  background-image: url("./assets/img/BGV.jpg");
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section-header > .header{
+  text-align: center;
+}
+#section-header > .header > h3{
+  font-size: 50px;
+}
+#section-header > .header > h3, p{
+  color: white;
+}
+#sectboutme >.boutme{
+  display: flex;
+}
+#sectboutme >.boutme >.leftside, .rightside{
+  width: 100%;
+}
+
+#sectboutme >.boutme{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#sectboutme >.boutme >.rightside{
+  padding-right: 30px;
+}
+#sectboutme >.boutme >.rightside > button{
+  background-color: cornflowerblue;
+  padding: 5px;
+  color: white;
+}
+img{
+  width: 50vh;
+}
